@@ -1,0 +1,68 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+h1{
+  margin-left: 512px;
+  margin-top: 50px;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #b0ebff;
+  border: 1px solid #222b99;
+  float: left;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 44px;
+  height: 80px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  margin-left: 512px;
+  margin-top: 50px;
+}
+
+.game-info {
+  margin-left: 40px;
+}
+.status{
+  font-size: 34px;
+}
+
+/*Adding diff colors to X and O */
+button.square[data-pro="X"] {
+  color: red;
+}
+
+button.square[data-pro="O"] {
+  color: green;
+}
